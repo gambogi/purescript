@@ -22,6 +22,7 @@ module Language.PureScript.Ide
 import           Protolude
 
 import           "monad-logger" Control.Monad.Logger
+import           Control.Parallel.Strategies
 import qualified Language.PureScript                as P
 import qualified Language.PureScript.Ide.CaseSplit  as CS
 import           Language.PureScript.Ide.Command
@@ -208,7 +209,7 @@ loadModules moduleNames = do
   -- We parse all source files, log eventual parse failures and insert the
   -- successful parses into the state.
   (failures, allModules) <-
-    partitionEithers <$> (traverse parseModule =<< findAllSourceFiles)
+    partitionEithers <$>((sequenceA . parMap rpar parseModule) =<< findAllSourceFiles)
   unless (null failures) $
     $(logWarn) ("Failed to parse: " <> show failures)
   traverse_ insertModule allModules

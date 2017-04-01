@@ -43,6 +43,7 @@ If you would prefer to use different terms, please use the section below instead
 | [@felixSchl](https://github.com/felixSchl) | Felix Schlitter | [MIT license](http://opensource.org/licenses/MIT) |
 | [@FrigoEU](https://github.com/FrigoEU) | Simon Van Casteren | [MIT license](http://opensource.org/licenses/MIT) |
 | [@garyb](https://github.com/garyb) | Gary Burgess | [MIT license](http://opensource.org/licenses/MIT) |
+| [@gambogi](https://github.com/gambogi) | Matt Gambogi | [MIT liscense](http://opensource.org/licenses/MIT) |
 | [@hdgarrood](https://github.com/hdgarrood) | Harry Garrood | [MIT license](http://opensource.org/licenses/MIT) |
 | [@ianbollinger](https://github.com/ianbollinger) | Ian D. Bollinger | [MIT license](http://opensource.org/licenses/MIT) |
 | [@ilovezfs](https://github.com/ilovezfs) | ilovezfs | MIT license |
